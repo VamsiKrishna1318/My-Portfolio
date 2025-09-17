@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      font-family: Arial, sans-serif;
+      color: #eaeaea;
+    }
+
+    .experience-section {
+      padding: 50px;
+    }
+
+    .experience-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #00adb5;
+    }
+
+    .experience-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .experience-card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .experience-card h3 {
+      color: #ffcc00;
+      margin-bottom: 8px;
+    }
+
+    .experience-card h4 {
+      font-size: 1rem;
+      color: #00adb5;
+      margin-bottom: 12px;
+    }
+
+    .experience-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 8px 0;
+    }
+
+    .experience-card ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .experience-card ul li {
+      margin: 6px 0;
+    }
+
+    .experience-card i {
+      margin-right: 8px;
+      color: #00adb5;
+    }
+
+    .back-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 25px;
+      background: #00adb5;
+      color: #121212;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+<section class="experience-section">
+  <h2 data-aos="fade-down">Experience</h2>
+
+  <div class="experience-container">
+
+    <!-- Internship -->
+    <div class="experience-card" data-aos="fade-right">
+      <h3><i class="fa-solid fa-laptop-code"></i> MERN Full Stack Developer Intern</h3>
+      <h4>ADHOC NETWORK | Short-term Internship</h4>
+      <ul>
+        <li>Built and deployed responsive web apps with MongoDB, Node.js, JavaScript, CSS3, and HTML5.</li>
+        <li>Worked in a team to understand full-stack workflows and best practices.</li>
+      </ul>
+    </div>
+
+    <!-- Hackathon -->
+    <div class="experience-card" data-aos="fade-up">
+      <h3><i class="fa-solid fa-trophy"></i> Hackathons</h3>
+      <ul>
+        <li>Participated in DevOps & Web Technology Hackathons.</li>
+        <li>Gained real-world problem-solving experience under strict deadlines.</li>
+      </ul>
+    </div>
+
+    <!-- GD Mentor -->
+    <div class="experience-card" data-aos="fade-left">
+      <h3><i class="fa-solid fa-users"></i> GD Mentor</h3>
+      <ul>
+        <li>Guided peers in group discussions to enhance communication skills.</li>
+        <li>Provided constructive feedback to improve discussion techniques.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+</section>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+</body>
+</html>

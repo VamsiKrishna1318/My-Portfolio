@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certification Courses</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      font-family: Arial, sans-serif;
+      color: #eaeaea;
+    }
+
+    .certification-section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .certification-section h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #ffcc00;
+    }
+
+    .certification-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .cert-card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, background 0.3s ease;
+      text-align: left;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      background: #222;
+    }
+
+    .cert-card h3 {
+      color: #00adb5;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .cert-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .cert-card a {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #00adb5;
+      color: #121212;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cert-card a:hover {
+      background: #ffcc00;
+    }
+
+    .cert-card i {
+      margin-right: 8px;
+      color: #ffcc00;
+    }
+
+    .back-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 25px;
+      background: #00adb5;
+      color: #121212;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+<section class="certification-section">
+  <h2 data-aos="fade-down"><i class="fa-solid fa-certificate"></i> Certification Courses</h2>
+
+  <div class="certification-container">
+
+    <div class="cert-card" data-aos="fade-right">
+      <h3>C Programming – Infosys Springboard</h3>
+      <p>Learned fundamentals of C language, coding practices, and problem solving.</p>
+      <a href="https://drive.google.com/file/d/1aeNCyKSln9y1KysA8aro4ZqSJAYh1AQ4/view?usp=drivesdk" target="_blank"><i class="fa-solid fa-eye"></i> View Certificate</a>
+    </div>
+
+    <div class="cert-card" data-aos="fade-up">
+      <h3>C Programming – CISCO</h3>
+      <p>Completed structured programming in C and software basics.</p>
+      <a href="https://drive.google.com/file/d/1apIOs9KdZbL2b3z0bmmqX-CPLUpTwlLm/view?usp=drivesdk" target="_blank"><i class="fa-solid fa-eye"></i> View Certificate</a>
+    </div>
+
+    <div class="cert-card" data-aos="fade-left">
+      <h3>Python Essentials 1 & 2 – CISCO</h3>
+      <p>Mastered Python basics, data structures, and coding best practices.</p>
+      <a href="https://drive.google.com/file/d/1aamwYsTbiOPF6SX6V2gF816p6Vpy7IVb/view?usp=drivesdk" target="_blank"><i class="fa-solid fa-eye"></i> View Certificate</a>
+    </div>
+
+    <div class="cert-card" data-aos="fade-right">
+      <h3>Generative AI & Python – NCS / Microsoft</h3>
+      <p>Explored AI fundamentals, ML integration, and generative AI techniques.</p>
+      <a href="https://drive.google.com/file/d/1akbLSV-wivdO8kqgEsyVtLJ3hS-4GExA/view?usp=drivesdk" target="_blank"><i class="fa-solid fa-eye"></i> View Certificate</a>
+    </div>
+
+    <div class="cert-card" data-aos="fade-up">
+      <h3>HTML5 Application Development – Coursera</h3>
+      <p>Learned advanced HTML5, CSS3, and responsive design practices.</p>
+      <a href="https://drive.google.com/file/d/1aMy6Hzt5X_LF2j5NQeTBOgjuAzYI-wC5/view?usp=drivesdk" target="_blank"><i class="fa-solid fa-eye"></i> View Certificate</a>
+    </div>
+
+    <div class="cert-card" data-aos="fade-left">
+      <h3>English Proficiency – Vepra Pearson (10 levels)</h3>
+      <p>Completed multiple levels of English proficiency certification.</p>
+      <a href="https://drive.google.com/file/d/1aH0HDT5rBiKTKNo1tIg_O2rMZ7-RNRZu/view?usp=drivesdk" target="_blank"><i class="fa-solid fa-eye"></i> View Certificate</a>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+</section>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>
