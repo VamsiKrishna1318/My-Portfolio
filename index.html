@@ -4,14 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Bendi Poornachandra Vamsi Krishna</title>
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Typed.js (typing animation) -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <style>
-    body {
+<style>
+ body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -29,8 +25,6 @@
       text-align: center;
       padding: 20px;
     }
-
-    /* Profile Image */
     .profile-pic {
       width: 150px;
       height: 150px;
@@ -44,8 +38,7 @@
     .profile-pic:hover {
       transform: scale(1.1);
     }
-
-    h1 {
+  h1 {
       font-size: 2.5rem;
       margin: 10px 0;
       color: #ffcc00;
@@ -60,8 +53,6 @@
       color: #00adb5;
       font-weight: bold;
     }
-
-    /* Buttons Section */
     .nav-links {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -85,16 +76,12 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.6);
       filter: brightness(1.1);
     }
-
-    /* Individual Button Colors */
     .projects { background: #00adb5; }
     .experience { background: #ff6f61; }
     .skills { background: #ffa500; }
     .certifications { background: #6a5acd; }
     .about { background: #32cd32; }
-    .resume { background: #ff1493; }  /* Pink for Resume */
-
-    /* Contact Section */
+    .resume { background: #ff1493; }  
     .contact {
       margin-top: 40px;
     }
@@ -112,8 +99,6 @@
       color: #00adb5;
       transform: scale(1.2);
     }
-
-    /* Dark Mode Button */
     .dark-toggle {
       position: fixed;
       top: 15px;
@@ -137,16 +122,12 @@
   </style>
 </head>
 <body>
-
-  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
-
-  <div class="container">
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+<div class="container">
     <img src="myphoto.jpg.jpg" alt="Profile" class="profile-pic">
       <h1>Hello, Welcome to My Portfolio!</h1>
-    <h1>I am Bendi Poornachandra Vamsi Krishna</h1>
+    <h1>I am Bendi Poorna Chandra Vamsi Krishna</h1>
     <h2><span class="typed-text"></span></h2>
-
-    <!-- Navigation Buttons -->
     <div class="nav-links">
       <a href="projects.html" class="projects">Projects</a>
       <a href="experience.html" class="experience">Experience</a>
@@ -155,23 +136,17 @@
       <a href="about.html" class="about">About Me</a>
       <a href="My_resume_updated.pdf" class="resume" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
     </div>
-
-    <!-- Contact Details -->
     <div class="contact">
       <h3>📩 Contact Me</h3>
       <a href="vamsikrishnab2023@gmail.com"><i class="fa-solid fa-envelope"></i></a>
       <a href="tel:+919346571607"><i class="fa-solid fa-phone"></i></a>
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/vamsikrishnabendi1318" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </div>
-
-  <script>
-    // Dark Mode Toggle
+<script>
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
     }
-
-    // Typing Effect
     var typed = new Typed(".typed-text", {
       strings: ["Aspiring BCA Student", "Web Developer", "Coder", "Learner"],
       typeSpeed: 70,
@@ -182,4 +157,5 @@
   </script>
 </body>
 </html>
+
 
